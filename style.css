@@ -1,0 +1,288 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 90%;
+    min-height: 300px;
+    min-width: 400px;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow: 5px 20px 50px -20px #b6b6b6;
+}
+
+ul {
+     padding: 0;  /*clears unncesessary spacing from the ul */
+     list-style: none; /* clears list styles from the ul */
+}
+
+
+
+
+/* //////  TWITTER NAVIGATION   ////// */
+
+.twitter {
+    display: flex; /* aligns the navigation to flexbox (left to right) */
+    height: 50px; /* gives the container some height */
+    align-items: center; /* aligns text center (top to bottom) within container */
+    padding: 0 10px; /* right and left padding of 10px */
+    margin: 20px 0;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px; /* creates a rounded edge for the border */
+    color: rgb(112, 111, 111); /* changes all text color for the entire container */
+    box-shadow: 5px 10px 20px -20px rgba(85,172,238,1);
+    font-family: "Helvetica Neue", Helvetica;
+}
+
+i {
+    padding: 5px;
+}
+
+.twitter li {
+    cursor: pointer;
+}
+.twitter li:hover {
+    color: rgba(85,172,238,1);
+}
+
+.twitter>li>a {
+    border-bottom: 2px solid rgba(85,172,238,1);
+}
+
+.twitter li:not(:last-child):not(.twitter__bird) {
+    margin-right: 20px;
+}
+
+.twitter li i:not(.fa-twitter):not(.fa-search):not(.fa-user-circle) {
+    margin-right: 3px;
+}
+
+.twitter li > button {
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 0;
+    background: rgba(85,172,238,1);
+    color: #fff;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    height: 2.5em;
+    width: 5.5em;
+}
+
+.twitter li > button:hover {
+    background-color: rgb(28, 126, 201);
+}
+
+.twitter__bird { /* added a class to this li element to isolate it */
+    margin-left: auto; /* setup auto left and right margins so the icon stays center */
+    margin-right: auto;
+    color: rgba(85,172,238,1);
+    font-size: 1.3em;
+}
+
+.twitter__search { /* add a class 'search' to the input to style */
+    font-family: inherit;
+    border-radius: 25px; /* rounds the corners of search box*/
+    padding: 8px 8px;
+    outline: none; /* removes the blue outline in the search */
+    border: 1px solid rgb(216, 216, 216);
+    background-color: #fafafa;
+    margin-right: 5px;
+}
+
+.twitter__search:focus {
+    border: 1px solid rgb(46, 146, 223);
+    background-color: #f0f0f0;
+}
+
+#filtersubmit {
+    position: relative;
+    z-index: 1;
+    left: -40px;
+    top: 1px;
+    color: #7B7B7B;
+    cursor:pointer;
+    width: 0;
+}
+
+
+
+/* //////  FACEBOOK NAVIGATION   ////// */
+ 
+.facebook {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 15px;
+    margin: 40px 0;
+    border: 1px solid rgba(238,238,238,1);
+    border-radius: 5px;
+    background: rgba(59,89,153,1);
+    color: #fff;
+    font-size: 0.9em;
+    box-shadow: 5px 10px 20px -20px rgba(59,89,153,1);
+    font-family: "Helvetica Neue", Helvetica;
+}
+
+
+.facebook li {
+    cursor: pointer;
+}
+
+.facebook__icon {
+    font-size: 2em;
+}
+
+.facebook__search {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    margin-right: auto;
+    outline: none;
+}
+
+.search {
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(197, 197, 197);
+}
+
+.facebook__button {
+    padding: 5px 15px;
+    padding-bottom: 6px;
+    font-size: 1em;
+    background-color: rgba(238,238,238,1);
+    color: rgba(117,117,117 ,1);
+    border: none;
+}
+
+.facebook__button:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.facebook__name {
+    font-size: 1.1em;
+    padding-right: 2px;
+}
+
+.facebook__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 5px; */
+    padding: 5px 10px;
+    height: 50%;
+}
+
+.vl {
+    border-left: 1px solid #29487d;
+    height: 40%;
+}
+
+.facebook__text:hover {
+    background-color: #29487d;
+    border-radius: 2px;
+}
+
+/* .facebook__text::after {
+    content: "";
+    display: inline-block;
+    border-right: 1px solid rgb(47, 65, 105);
+    margin-left: 15px;
+    /* color: rgb(32, 43, 66); }*/
+
+
+.facebook__right-icons {
+    color: rgb(32, 43, 66);
+    margin-left: 5px;
+}
+
+.facebook__right-icons:hover {
+    color: rgb(24, 30, 44);
+}
+
+
+/* //////  GITHUB NAVIGATION   ////// */
+
+.gitHub {
+    display: flex;
+    height: 40px; 
+    align-items: center; 
+    justify-content: center;
+    margin: 40px 0;
+    padding-bottom: 12px;
+    padding-top: 12px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(238, 238, 238);
+    box-shadow: 5px 10px 20px -20px rgb(201, 201, 201);
+    font-family: 'Roboto', sans-serif;
+    background-color: #24292e;
+    font-family: sans-serif;
+}
+
+.github__logo {
+    font-size: 2em;
+    padding-right: 5px;
+}
+
+.search--gh {
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: hsla(0,0%,100%, .1);
+    border-radius: 3px;
+}
+
+.search--gh:focus {
+    background-color: #fff;
+}
+
+.gitHub__search {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    /* margin-right: auto; */
+}
+
+.gitHub__nav {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+}
+
+.gitHub__text {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.gitHub__text:hover {
+    color: rgb(165, 165, 165);
+}
+
+.gitHub__icons-right {
+    font-size: 14px;
+    /* font-size: 0.8em;
+    padding-right: 7px; */
+}
+
+.gitHub__icons-right:hover {
+    color: rgb(165, 165, 165);
+}
+
+.gitHub__icons-right--bell {
+    padding-right: 12px;
+    color: #b6b6b6;
+}
